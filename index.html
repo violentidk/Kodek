@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aine Ehitus - Küsimusmäng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aine Ehitus - Küsimusmäng</h1>
+
+    <div id="quiz">
+        <div class="question-container">
+            <p><strong>1. Mis osakesed asuvad aatomi tuumas?</strong></p>
+            <input type="radio" name="q1" value="prootonid ja elektronid"> Prootonid ja elektronid<br>
+            <input type="radio" name="q1" value="prootonid ja neutronid"> Prootonid ja neutronid<br>
+            <input type="radio" name="q1" value="neutronid ja elektronid"> Neutronid ja elektronid<br>
+        </div>
+
+        <div class="question-container">
+            <p><strong>2. Mis on isotoobid?</strong></p>
+            <input type="radio" name="q2" value="Erineva arvu prootonite ja neutronitega aatomid"> Erineva arvu prootonite ja neutronitega aatomid<br>
+            <input type="radio" name="q2" value="Sama arvu prootonite, kuid erineva arvu elektronidega aatomid"> Sama arvu prootonite, kuid erineva arvu elektronidega aatomid<br>
+            <input type="radio" name="q2" value="Erineva arvu elektronidega aatomid"> Erineva arvu elektronidega aatomid<br>
+        </div>
+
+        <div class="question-container">
+            <p><strong>3. Milline side toimub elektronide jagamisel aatomite vahel?</strong></p>
+            <input type="radio" name="q3" value="Iooniline side"> Iooniline side<br>
+            <input type="radio" name="q3" value="Kovalentne side"> Kovalentne side<br>
+            <input type="radio" name="q3" value="Metalliline side"> Metalliline side<br>
+        </div>
+
+        <div class="question-container">
+            <p><strong>4. Mis on molekul?</strong></p>
+            <input type="radio" name="q4" value="Kaks või enam aatomit, mis on omavahel seotud"> Kaks või enam aatomit, mis on omavahel seotud<br>
+            <input type="radio" name="q4" value="Aatom, mis on saanud iooniks"> Aatom, mis on saanud iooniks<br>
+            <input type="radio" name="q4" value="Üksik aatom, millel on vaba elektron"> Üksik aatom, millel on vaba elektron<br>
+        </div>
+
+        <div class="question-container">
+            <p><strong>5. Mis on ioon?</strong></p>
+            <input type="radio" name="q5" value="Aatom, millel on võrdselt positiivne ja negatiivne laeng"> Aatom, millel on võrdselt positiivne ja negatiivne laeng<br>
+            <input type="radio" name="q5" value="Aatom, millel on kas positiivne või negatiivne laeng"> Aatom, millel on kas positiivne või negatiivne laeng<br>
+            <input type="radio" name="q5" value="Molekul, mis on elektriliselt neutraalne"> Molekul, mis on elektriliselt neutraalne<br>
+        </div>
+
+        <button onclick="submitAnswers()">Kontrolli vastuseid</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
